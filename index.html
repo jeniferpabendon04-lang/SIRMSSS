@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sistem Informasi Rawat Inap</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+
+        <div class="logo">
+            🏥
+            <h2>SIRAWAT</h2>
+            <p>Sistem Informasi Rawat Inap</p>
+        </div>
+
+        <a href="#dashboard">🏠 Dashboard</a>
+
+        <a href="#pasien">👤 Data Pasien</a>
+
+        <a href="#rawat">📋 Rawat Inap</a>
+
+        <a href="#kamar">🛏️ Data Kamar</a>
+
+        <a href="#dokter">👨‍⚕️ Tenaga Kesehatan</a>
+
+        <a href="#laporan">📄 Laporan</a>
+
+    </div>
+
+
+    <!-- KONTEN UTAMA -->
+    <div class="content">
+
+        <!-- HEADER -->
+        <header>
+
+            <div>
+                <h1>Sistem Informasi Rawat Inap</h1>
+                <p>Manajemen pelayanan pasien rawat inap</p>
+            </div>
+
+            <div class="user">
+                👤 Admin
+            </div>
+
+        </header>
+
+
+        <!-- DASHBOARD -->
+        <section id="dashboard">
+
+            <h2 class="judul">Dashboard</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <div>
+                        <p>Total Pasien</p>
+                        <h2>125</h2>
+                    </div>
+
+                    <span>👥</span>
+                </div>
+
+
+                <div class="card">
+                    <div>
+                        <p>Pasien Dirawat</p>
+                        <h2>38</h2>
+                    </div>
+
+                    <span>🏥</span>
+                </div>
+
+
+                <div class="card">
+                    <div>
+                        <p>Kamar Terisi</p>
+                        <h2>32</h2>
+                    </div>
+
+                    <span>🛏️</span>
+                </div>
+
+
+                <div class="card">
+                    <div>
+                        <p>Kamar Tersedia</p>
+                        <h2>18</h2>
+                    </div>
+
+                    <span>✅</span>
+                </div>
+
+            </div>
+
+
+            <!-- INFORMASI -->
+            <div class="welcome">
+
+                <h2>Selamat Datang di SIRAWAT 👋</h2>
+
+                <p>
+                    Sistem Informasi Rawat Inap digunakan untuk membantu
+                    pengelolaan data pasien, kamar, tenaga kesehatan,
+                    serta pelayanan rawat inap secara lebih terorganisir.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- DATA PASIEN -->
+        <section id="pasien">
+
+            <h2 class="judul">Data Pasien</h2>
+
+            <div class="table-box">
+
+                <div class="table-header">
+
+                    <h3>Daftar Pasien</h3>
+
+                    <a href="#form-pasien" class="button">
+                        + Tambah Pasien
+                    </a>
+
+                </div>
+
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>No</th>
+                            <th>No. Rekam Medis</th>
+                            <th>Nama Pasien</th>
+                            <th>Jenis Kelamin</th>
+                            <th>Umur</th>
+                            <th>Alamat</th>
+                            <th>Status</th>
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+                            <td>1</td>
+                            <td>RM001</td>
+                            <td>Siti Aminah</td>
+                            <td>Perempuan</td>
+                            <td>35</td>
+                            <td>Parepare</td>
+
+                            <td>
+                                <span class="status dirawat">
+                                    Dirawat
+                                </span>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>2</td>
+                            <td>RM002</td>
+                            <td>Andi Rahman</td>
+                            <td>Laki-laki</td>
+                            <td>42</td>
+                            <td>Parepare</td>
+
+                            <td>
+                                <span class="status pulang">
+                                    Pulang
+                                </span>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>3</td>
+                            <td>RM003</td>
+                            <td>Nur Aisyah</td>
+                            <td>Perempuan</td>
+                            <td>28</td>
+                            <td>Pinrang</td>
+
+                            <td>
+                                <span class="status dirawat">
+                                    Dirawat
+                                </span>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- FORM PASIEN -->
+        <section id="form-pasien">
+
+            <h2 class="judul">Pendaftaran Pasien Rawat Inap</h2>
+
+            <div class="form-box">
+
+                <form>
+
+                    <div class="form-group">
+
+                        <label>No. Rekam Medis</label>
+
+                        <input
+                            type="text"
+                            placeholder="Masukkan nomor rekam medis"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Nama Lengkap</label>
+
+                        <input
+                            type="text"
+                            placeholder="Masukkan nama pasien"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>NIK</label>
+
+                        <input
+                            type="text"
+                            placeholder="Masukkan NIK"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Jenis Kelamin</label>
+
+                        <select>
+
+                            <option>Pilih jenis kelamin</option>
+
+                            <option>Laki-laki</option>
+
+                            <option>Perempuan</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Tanggal Lahir</label>
+
+                        <input type="date">
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Alamat</label>
+
+                        <textarea
+                            placeholder="Masukkan alamat pasien">
+                        </textarea>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Keluhan</label>
+
+                        <textarea
+                            placeholder="Masukkan keluhan pasien">
+                        </textarea>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Diagnosa</label>
+
+                        <input
+                            type="text"
+                            placeholder="Masukkan diagnosa"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Kamar</label>
+
+                        <select>
+
+                            <option>Pilih kamar</option>
+
+                            <option>Melati 01 - Kelas I</option>
+
+                            <option>Melati 02 - Kelas I</option>
+
+                            <option>Mawar 01 - Kelas II</option>
+
+                            <option>Mawar 02 - Kelas II</option>
+
+                            <option>Anggrek 01 - Kelas III</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Tanggal Masuk</label>
+
+                        <input type="date">
+
+                    </div>
+
+
+                    <button type="submit" class="button simpan">
+                        💾 Simpan Data
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- DATA RAWAT INAP -->
+        <section id="rawat">
+
+            <h2 class="judul">Data Rawat Inap</h2>
+
+            <div class="table-box">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>No</th>
+                            <th>No. RM</th>
+                            <th>Nama Pasien</th>
+                            <th>Kamar</th>
+                            <th>Tanggal Masuk</th>
+                            <th>Diagnosa</th>
+                            <th>Status</th>
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>1</td>
+
+                            <td>RM001</td>
+
+                            <td>Siti Aminah</td>
+
+                            <td>Melati 01</td>
+
+                            <td>05-10-2026</td>
+
+                            <td>Demam</td>
+
+                            <td>
+                                <span class="status dirawat">
+                                    Dirawat
+                                </span>
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>2</td>
+
+                            <td>RM003</td>
+
+                            <td>Nur Aisyah</td>
+
+                            <td>Mawar 02</td>
+
+                            <td>07-10-2026</td>
+
+                            <td>Gastritis</td>
+
+                            <td>
+                                <span class="status dirawat">
+                                    Dirawat
+                                </span>
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- DATA KAMAR -->
+        <section id="kamar">
+
+            <h2 class="judul">Data Kamar</h2>
+
+            <div class="room-container">
+
+
+                <div class="room">
+
+                    <h3>Melati 01</h3>
+
+                    <p>Kelas I</p>
+
+                    <h4>2 Tempat Tidur</h4>
+
+                    <span class="room-available">
+                        Tersedia
+                    </span>
+
+                </div>
+
+
+                <div class="room">
+
+                    <h3>Melati 02</h3>
+
+                    <p>Kelas I</p>
+
+                    <h4>2 Tempat Tidur</h4>
+
+                    <span class="room-full">
+                        Penuh
+                    </span>
+
+                </div>
+
+
+                <div class="room">
+
+                    <h3>Mawar 01</h3>
+
+                    <p>Kelas II</p>
+
+                    <h4>4 Tempat Tidur</h4>
+
+                    <span class="room-available">
+                        Tersedia
+                    </span>
+
+                </div>
+
+
+                <div class="room">
+
+                    <h3>Mawar 02</h3>
+
+                    <p>Kelas II</p>
+
+                    <h4>4 Tempat Tidur</h4>
+
+                    <span class="room-full">
+                        Penuh
+                    </span>
+
+                </div>
+
+
+                <div class="room">
+
+                    <h3>Anggrek 01</h3>
+
+                    <p>Kelas III</p>
+
+                    <h4>6 Tempat Tidur</h4>
+
+                    <span class="room-available">
+                        Tersedia
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- TENAGA KESEHATAN -->
+        <section id="dokter">
+
+            <h2 class="judul">Tenaga Kesehatan</h2>
+
+            <div class="table-box">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>No</th>
+                            <th>Nama</th>
+                            <th>Profesi</th>
+                            <th>Unit</th>
+                            <th>Status</th>
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>1</td>
+
+                            <td>dr. Andi</td>
+
+                            <td>Dokter</td>
+
+                            <td>Rawat Inap</td>
+
+                            <td>
+                                <span class="status dirawat">
+                                    Aktif
+                                </span>
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>2</td>
+
+                            <td>Ns. Rina</td>
+
+                            <td>Perawat</td>
+
+                            <td>Rawat Inap</td>
+
+                            <td>
+                                <span class="status dirawat">
+                                    Aktif
+                                </span>
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>3</td>
+
+                            <td>Ns. Budi</td>
+
+                            <td>Perawat</td>
+
+                            <td>Rawat Inap</td>
+
+                            <td>
+                                <span class="status dirawat">
+                                    Aktif
+                                </span>
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- LAPORAN -->
+        <section id="laporan">
+
+            <h2 class="judul">Laporan Rawat Inap</h2>
+
+            <div class="report">
+
+                <h2>LAPORAN DATA RAWAT INAP</h2>
+
+                <h3>Rumah Sakit Sehat Sentosa</h3>
+
+                <p>
+                    Periode: Oktober 2026
+                </p>
+
+                <hr>
+
+                <div class="report-number">
+
+                    <div>
+                        <strong>125</strong>
+                        <span>Total Pasien</span>
+                    </div>
+
+                    <div>
+                        <strong>38</strong>
+                        <span>Pasien Dirawat</span>
+                    </div>
+
+                    <div>
+                        <strong>18</strong>
+                        <span>Kamar Tersedia</span>
+                    </div>
+
+                </div>
+
+
+                <h3>Ringkasan</h3>
+
+                <p>
+                    Sistem informasi rawat inap mencatat data pasien,
+                    pendaftaran rawat inap, penggunaan kamar,
+                    tenaga kesehatan, dan status pelayanan pasien.
+                </p>
+
+                <br>
+
+                <button
+                    onclick="window.print()"
+                    class="button">
+                    🖨️ Cetak Laporan
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <p>
+                © 2026 SIRAWAT - Sistem Informasi Rawat Inap
+            </p>
+
+        </footer>
+
+    </div>
+
+</body>
+</html>

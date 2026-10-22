@@ -1,0 +1,565 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f4f7f9;
+    color: #333;
+}
+
+
+/* SIDEBAR */
+
+.sidebar {
+    width: 240px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    background: #087f8c;
+    color: white;
+
+    padding: 25px 15px;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.logo h2 {
+    margin-top: 5px;
+}
+
+.logo p {
+    font-size: 12px;
+    opacity: 0.8;
+    margin-top: 5px;
+}
+
+.sidebar a {
+    display: block;
+
+    color: white;
+    text-decoration: none;
+
+    padding: 13px 15px;
+    margin-bottom: 8px;
+
+    border-radius: 7px;
+}
+
+.sidebar a:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+
+/* CONTENT */
+
+.content {
+    margin-left: 240px;
+    padding: 25px;
+}
+
+
+/* HEADER */
+
+header {
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #087f8c;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #777;
+}
+
+.user {
+    background: #e7f6f7;
+
+    padding: 10px 15px;
+
+    border-radius: 20px;
+
+    color: #087f8c;
+}
+
+
+/* SECTION */
+
+section {
+    padding-top: 30px;
+    margin-bottom: 60px;
+}
+
+.judul {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+/* CARD */
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.card {
+    background: white;
+
+    padding: 22px;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    box-shadow:
+        0 2px 8px rgba(0,0,0,0.08);
+}
+
+.card p {
+    color: #777;
+}
+
+.card h2 {
+    margin-top: 8px;
+
+    color: #087f8c;
+
+    font-size: 28px;
+}
+
+.card span {
+    font-size: 35px;
+}
+
+
+/* WELCOME */
+
+.welcome {
+    background: white;
+
+    margin-top: 25px;
+
+    padding: 30px;
+
+    border-radius: 10px;
+}
+
+.welcome h2 {
+    color: #087f8c;
+
+    margin-bottom: 10px;
+}
+
+.welcome p {
+    line-height: 1.7;
+}
+
+
+/* TABLE */
+
+.table-box {
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    overflow-x: auto;
+}
+
+.table-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+th {
+    background: #087f8c;
+
+    color: white;
+
+    padding: 13px;
+
+    text-align: left;
+}
+
+td {
+    padding: 13px;
+
+    border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+    background: #f5fafa;
+}
+
+
+/* BUTTON */
+
+.button {
+    display: inline-block;
+
+    background: #087f8c;
+
+    color: white;
+
+    text-decoration: none;
+
+    border: none;
+
+    padding: 11px 17px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #05636d;
+}
+
+
+/* STATUS */
+
+.status {
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+}
+
+.dirawat {
+    background: #d4edda;
+
+    color: #155724;
+}
+
+.pulang {
+    background: #e2e3e5;
+
+    color: #383d41;
+}
+
+
+/* FORM */
+
+.form-box {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+}
+
+form {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 7px;
+
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 12px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 7px;
+
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #087f8c;
+}
+
+.form-group textarea {
+    min-height: 100px;
+
+    resize: vertical;
+}
+
+.simpan {
+    width: 150px;
+}
+
+
+/* KAMAR */
+
+.room-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.room {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 2px 8px rgba(0,0,0,0.08);
+}
+
+.room h3 {
+    color: #087f8c;
+
+    margin-bottom: 10px;
+}
+
+.room p {
+    color: #777;
+
+    margin-bottom: 10px;
+}
+
+.room h4 {
+    margin-bottom: 15px;
+}
+
+.room span {
+    display: inline-block;
+
+    padding: 7px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+}
+
+.room-available {
+    background: #d4edda;
+
+    color: #155724;
+}
+
+.room-full {
+    background: #f8d7da;
+
+    color: #721c24;
+}
+
+
+/* LAPORAN */
+
+.report {
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.report h2 {
+    color: #087f8c;
+
+    margin-bottom: 8px;
+}
+
+.report hr {
+    margin: 25px 0;
+
+    border: none;
+
+    border-top: 1px solid #ddd;
+}
+
+.report-number {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+
+    margin: 30px 0;
+}
+
+.report-number div {
+    background: #f2fafa;
+
+    padding: 20px;
+
+    border-radius: 10px;
+}
+
+.report-number strong {
+    display: block;
+
+    color: #087f8c;
+
+    font-size: 30px;
+}
+
+.report-number span {
+    display: block;
+
+    margin-top: 5px;
+
+    color: #777;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #087f8c;
+
+    color: white;
+
+    padding: 20px;
+
+    text-align: center;
+
+    border-radius: 10px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+
+    .cards {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .room-container {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .sidebar {
+        position: relative;
+
+        width: 100%;
+
+        height: auto;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+
+    header {
+        display: block;
+    }
+
+    .user {
+        margin-top: 15px;
+
+        display: inline-block;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .room-container {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    .report-number {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* PRINT */
+
+@media print {
+
+    .sidebar,
+    header,
+    .button,
+    footer {
+        display: none;
+    }
+
+    .content {
+        margin: 0;
+    }
+
+    body {
+        background: white;
+    }
+
+    .report {
+        box-shadow: none;
+    }
+}
